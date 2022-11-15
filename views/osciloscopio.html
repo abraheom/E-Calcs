@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./css/osciloscopio.css"
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <form action="" class="form-control">
+        <label class="inp_title">Numero cuadriculas</label>
+        <input type="number" name="" id="numeroCuadriculas" value="10" step="2" onchange="leerControles(true)">
+
+        <label class="inp_title">Voltios por division</label>
+        <input type="number" name="" id="voltiosPorDivision" value="0.100" step="0.1" min="0.10" onchange="leerControles()">
+        
+        <label class="inp_title">Tiempo por division</label>
+        <input type="number" name="" id="tiempoPorDivision" value="1" step="1" onchange="leerControles()">
+        
+        <label class="inp_title">Offset voltaje</label>
+        <input type="number" name="" id="posicionVoltaje0" value="0" step="1" onchange="leerControles(true)">
+
+    </form>
+    <script src="js/osciloscopio.js"></script>
+</body>
+</html>

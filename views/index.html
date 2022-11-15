@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#222">
+    <title>Calculadoras</title>
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+<body>
+    <!--
+    <div class="calculadora">
+        <div class="calc-title">Impedancia</div>
+        <span class="field-title">L (µH)</span>
+        <input type="number" value="0" class="calc-input" id="imp_L" onkeyup="calcImpedancia()">
+        <span class="field-title">C (pF)</span>
+        <input type="number" value="0" class="calc-input" id="imp_C" onkeyup="calcImpedancia()">
+        <span class="calc-resultado" id="imp_r">0.00 Ω</span>
+    </div>
+ -->
+    <div class="calculadora">
+        <div class="calc-title">Potencia RF</div>
+        <span class="field-title">Voltaje pico (V)</span>
+        <input type="number" value="0" class="calc-input" id="pRF_V" onkeyup="calcPotenciaRF()">
+        <span class="field-title">Carga (Ω)</span>
+        <input type="number" value="51.10" class="calc-input" id="pRF_R" onkeyup="calcPotenciaRF()">
+        <span class="field-title">Caida de voltaje diodo (V)</span>
+        <input type="number" value="0.310" class="calc-input" id="pRF_VF" onkeyup="calcPotenciaRF()">
+        <span class="calc-resultado" id="pRF_RES">0.00 Watts</span>
+    </div>
+    <div class="calculadora">
+        <div class="calc-title">Impedancia</div>
+        <span class="field-title">L (µH)</span>
+        <input type="number" value="0" class="calc-input" id="imp_L" onkeyup="calcImpedancia()">
+        <span class="field-title">C (pF)</span>
+        <input type="number" value="0" class="calc-input" id="imp_C" onkeyup="calcImpedancia()">
+        <span class="calc-resultado" id="imp_r">0.00 Ω</span>
+    </div>
+
+    <div class="calculadora">
+        <div class="calc-title">Armonicos</div>
+        <span class="field-title">Frecuencia (Mhz)</span>
+        <input type="number" value="0" class="calc-input" id="arm_f" onkeyup="calcArmonicos()">
+        <span class="calc-resultado" id="arm_r"></span>
+    </div>
+
+    .calculadora
+    <script src="js/calculadora.js"></script>
+</body>
+</html>

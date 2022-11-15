@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <div class="container-main">
+            <h1 class="title-main">DISEÑO DE AMPLIFICADORES</h1>
+            
+            <div class="container-calculator">
+                <div class="container-image">
+                    <img src="./images/AmplificadorclaseA.jpg" alt="">
+                </div>
+                <form class="form-componentes">
+                    <label class="lbl_field_title">Vcc</label>
+                    <input type="number" name="" id="inp_Vcc" value="5">
+        
+                    <label class="lbl_field_title">𝛽</label>
+                    <input type="number" name="" id="inp_beta" value="100">
+        
+                    <label class="lbl_field_title">Ic</label>
+                    <input type="number" name="" id="inp_Ic" value="0.002">
+        
+                    <label class="lbl_field_title">R1</label>
+                    <input type="text" readonly name="" id="inp_r1">
+        
+                    <label class="lbl_field_title">R2</label>
+                    <input type="text" readonly name="" id="inp_r2">
+        
+                    <label class="lbl_field_title">R3</label>
+                    <input type="text" readonly name="" id="inp_r3">
+        
+                        <label class="lbl_field_title">R4</label>
+                    <input type="text" readonly name="" id="inp_r4">
+
+                    <input type="button" value="Calcular" onclick="calcular()" class="btn-submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

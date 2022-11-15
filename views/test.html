@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <script>
+
+let r1 = undefined;
+let Ve = undefined;
+let Vb = undefined;
+let R1 = undefined;
+
+let Vcc = 18;
+let R2 = 5600;
+let RC = 4700;
+let Vc = 12;
+let RE = 1200;
+
+let Vrc = Vcc-Vc;
+let Ic = Vrc/RC;
+let VE = Ic*RE;
+let VB = VE + 0.7;
+
+
+
+console.log("Ic: " + Ic*1000 + "mA");
+console.log("VE: " + VE);
+console.log("VB: " + VB);
+
+R1 = 5600;
+R2 = 5600;
+//VB = (Vcc / (R1+R2)) * R2;
+
+/*
+VB/R2 = (Vcc / (R1+R2))
+
+(Vb/R2)/Vcc = (R1+R2) 
+
+(Vb/R2)/Vcc - R2 = R1
+
+*/
+let i = VB/R2;
+let v2 = Vcc/VB;
+R1 = v2/i;
+console.log("R1: " + R1);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
